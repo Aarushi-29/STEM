@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% block title %} About  {% endblock %} 
+
+{% block content %} 
+<br>
+
+<div id="history-wrapper" class="wrapper" style="background-color: white;">
+
+  <div id="history-div" class="box">
+    <br>
+    <h2 id="HistoryLesson" style="color: black;"> A SHORT HISTORY LESSON </h2> 
+    <p id="historypara"> 
+      Do you happen to know the first Indian woman to receive a medical degree? How about the first Indian woman to get a Ph.D. in a scientific discipline? Or the first Indian woman to lead a missile project? As we celebrate the remarkable contributions of women in STEM, let us briefly recognize several Indian women who tirelessly dedicated their lives to the pursuit of excellence.<span id="dots">...</span><span id="more">Let us start with Dr. Anandibai Joshi (1865 to 1887). On March 11, 1886, Dr. Joshi received her medical degree from the Woman's Medical College of Pennsylvania at the age of 21, making her one of the first Indian women to obtain a medical degree. She returned to India and was appointed as the physician-in-charge of the female ward at the Albert Edward Hospital in Kolhapur.
+      <br><br>
+
+      Dr. Kamala Sohonie (1911 to 1998) was the first Indian woman to receive a Ph.D. in a scientific discipline. She earned her doctorate in biochemistry from Cambridge University in 1939. Her pioneering research on the nutritional aspects of legumes and milk proteins laid the foundation for further studies in the field of biochemistry.
+      <br><br>
+
+      Dr. Indira Hinduja (born 1946) is a renowned gynecologist, obstetrician, and infertility specialist. She delivered India's first test-tube baby on August 6, 1986, using the gamete intrafallopian transfer (GIFT) technique. Dr. Hinduja’s work has been instrumental in advancing reproductive health and infertility treatments in India.
+      <br><br>
+
+      Dr. Aditi Pant (born 1943) is a celebrated oceanographer who contributed significantly to marine science. She was the first Indian woman to participate in an Antarctic expedition in 1983. Dr. Pant's research has been vital in understanding ocean currents and their impact on the climate.
+      <br><br>
+
+      Dr. Tessy Thomas (born 1963) is an aerospace scientist and the first woman to lead a missile project in India. Known as the "Missile Woman of India," she was the Project Director for Agni-IV and Agni-V missiles at the Defence Research and Development Organisation (DRDO). Her contributions have been crucial in strengthening India's defense capabilities.
+      <br><br>
+
+      Dr. Gagandeep Kang (born 1962) is a leading virologist and the first Indian woman to be elected as a Fellow of the Royal Society. Her research focuses on enteric infections and the development of vaccines for infectious diseases, significantly impacting public health in India and globally.
+      <br><br>
+
+      Our hope at "STEM" is for you to plant a strong foundation for your future. Just like the Indian women before you have done, we hope you can blossom and inspire the next generation to learn from your prowess.
+      </span></p>
+      <button onclick="readMore()" id="myBtn">Read more</button>
+    </p>
+  </div>
+
+  <div id="hisotry-slideshow-div">
+    <div id="actual-history-slideshow" class ="container">
+      <div class="slideshow">
+          <div class="numbertext">1/6</div>
+          <img class="slidepics" src="{{ url_for('static', filename = 'anandibai.jpg')}}">
+          <br>
+          <div class="captionbox">
+          <p id="caption">Dr. Anandibai Joshi </p>
+          </div>
+      </div>
+      <div class="slideshow">
+          <div class="numbertext">2/6</div>
+          <img class="slidepics" src="{{url_for('static', filename='kamala.png')}}">
+          <br>
+          <div class="captionbox">
+          <p id="caption">Dr. Kamala Sohonie</p>
+          </div>
+      </div>
+      <div class="slideshow">
+          <div class="numbertext">3/6</div>
+          <img class="slidepics" src="{{url_for('static', filename ='indira.jpg')}}">
+          <br>
+          <div class="captionbox">
+          <p id="caption"> Dr. Indira Hinduja</p>
+          </div>
+      </div>
+      <div class="slideshow">
+          <div class="numbertext">4/6</div>
+          <img class="slidepics" src="{{url_for('static', filename='aditi_pant.jpg')}}" >
+          <br>
+          <div class="captionbox">
+          <p id="caption"> Dr. Aditi Pant</p>
+          </div>
+      </div>
+      <div class="slideshow">
+          <div class="numbertext">5/6</div>
+          <img class="slidepics" src="{{url_for('static',filename='tessy.jpg')}}" >
+          <br>
+          <div class="captionbox">
+          <p id="caption"> Dr. Tessy Thomas</p>
+          </div>
+  
+      </div>
+      <div class="slideshow">
+          <div class="numbertext">6/6</div>
+          <img class="slidepics"src="{{url_for('static', filename='gagandeep.png')}}">
+          <br>
+          <div class="captionbox">
+          <p id="caption"> Dr. Gagandeep Kang</p>
+      </div>
+  </div>
+  </div>
+
+</div>
+
+<br><br><br><br><br><br><br><br><br>
+
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slideshow");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+  }
+
+  function readMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
+{% endblock %}

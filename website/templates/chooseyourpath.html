@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Choose Your Path{% endblock %} 
+
+{% block content %} 
+<h1 class="title">Choose Your Path!</h1>
+<br><br><br><br><br><br>
+<div class="button1">
+    <img id="downy" src="{{ url_for('static', filename='Science.png')}}"
+                    width = "300px"
+                    height = "200px"/>
+    <div class="dropdown">
+        <button class="dropbtn"></button>
+        <div class="dropdown-content">
+          <a href="#">Natural Sciences (Biology, Chemistry, Physics)</a><a href="#">Health Sciences</a>
+        </div>
+      </div>
+</div>
+<br>
+<br>
+<div class="button2">
+    <img id="downy" src="{{ url_for('static', filename='Technology.png')}}"
+            width = "300px"
+            height = "200px"/>
+    <div class="dropdown">
+        <button class="dropbtn"></button>
+        <div class="dropdown-content">
+            <a href="#">Biotechnology</a><a href="#">Software Engineering</a><a href="#">Cybersecurity</a><a href="#">Data Science/AI</a><a href="#">Game Development</a>
+        </div>
+      </div>
+</div>
+<br>
+<br>
+<div class="button3">
+    <img id="downy" src="{{ url_for('static', filename='Engineering.png')}}"
+        width = "300px"
+        height = "200px"/>
+    <div class="dropdown">
+        <button class="dropbtn"></button>
+        <div class="dropdown-content">
+            <a href="#">Mechanical Engineering</a><a href="#">Electrical Engineering</a><a href="#">Biomedical Engineering</a><a href="#">Chemical Engineering</a><a href="#">Computer Engineering</a>
+        </div>
+      </div>
+</div>
+<br>
+<br>
+<div class="button4">
+    <img id="downy" src="{{url_for('static', filename='Math.png')}}"
+    width = "300px"
+    height = "200px"/>
+    <div class="dropdown">
+        <button class="dropbtn"></button>
+        <div class="dropdown-content">
+          <a href="#">Algebra</a><a href="#">Geometry</a><a href="#">Trigonometry</a><a href="#">Calculus</a><a href="#">Statistics</a>
+        </div>
+      </div>
+</div>
+ 
+{% endblock %} 

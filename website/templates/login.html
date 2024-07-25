@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %} Welcome Back {% endblock %} 
+
+
+{% block content %}
+    <br>
+    <h1 class="title">WELCOME BACK</h1>
+    
+    <form method="POST">
+        <div id="login-div" class="form-group">
+            <br>
+            <label for="username">Username</label>
+            <input 
+                type="text"
+                class="form-control"
+                id="username"
+                name="username"
+                required>
+            
+            <label for="password">Password</label>
+            <input 
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                required>
+            <br>
+            <p><i>New around here? <a href="/signup">Signup</a></i></p>
+        </div>
+        <br>
+        
+        <button type="submit"
+                class="btn btn-primary" 
+                style="background-color: #eaff82; 
+                        color: black; 
+                        position:relative;
+                        left: 44%;
+                        width: 11vw;
+                        font-family: 'Quicksand', sans-serif;
+                        font-weight: bold;">
+            LOGIN
+        </button>
+    </form>
+
+{% endblock %} 

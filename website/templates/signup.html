@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %} SignUp  {% endblock %} 
+
+{% block content %} 
+<h1 id="title">JOIN</h1>
+<form method="POST">
+    <div class="form-group" id="signup-div">
+        <br>
+        <label for="fullName">Full Name</label>
+        <input 
+            type="text" 
+            class="form-control" 
+            id="fullName" 
+            name="fullName" 
+            required
+        />
+        
+        <label for="username">Username</label>
+        <input 
+            type="text" 
+            class="form-control" 
+            id="username" 
+            name="username" 
+            required
+        />
+        
+        <label for="email">Email Address</label>
+        <input 
+            type="email" 
+            class="form-control" 
+            id="email" 
+            name="email" 
+            required
+        />
+        
+        <label for="password1">Password</label>
+        <input 
+            type="password" 
+            class="form-control" 
+            id="password1" 
+            name="password1" 
+            required
+        />
+        
+        <label for="password2">Confirm Password</label>
+        <input 
+            type="password" 
+            class="form-control" 
+            id="password2" 
+            name="password2" 
+            required
+        />  
+        <br>
+
+        <p><i>Already have an account? <a href="/login">Login</a></i></p>
+        <br>
+    </div>
+    <button id="signup-button" 
+            type="submit" 
+            class="btn btn-primary" 
+            style="background-color: #eaff82; 
+                    color: black; 
+                    position:relative;
+                    left: 44%;
+                    width: 11vw;
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;">
+        SIGNUP
+    </button>
+</form>
+
+{% endblock %} 

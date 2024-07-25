@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block title %} Home {% endblock %} 
+
+{% block content %} 
+
+<br>
+<h1 class="title"> <br>STEM</h1>
+<br><br>
+
+<div class="home-buttons">
+    <div class="btn-group">
+        <button class="page_links_left" id="about"><a href="/about">ABOUT</a></button>
+        <button class="page_links_right" id="resources"><a href="/resources">RESOURCES</a></button>
+    </div>
+    <br><br>
+    <div class="btn-group">
+        <button class="page_links_left" id="join"><a href="/join">JOIN</a></button>
+        <button class="page_links_right" id="chooseyourpath"><a href="/your-path">CHOOSE YOUR PATH</a></button>
+    </div>
+    <br><br>
+    <div class="btn-group">
+        <button class="page_links_left" id="myBtn">MAILING LIST</button>
+        <button class="page_links_right" id="contactus"><a href="/contact">CONTACT US</a></button>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+        <span class="close">&times;
+            <div class="container"> 
+                <div class="row">
+                    <h4 id="mailing-h4">Mailing List</h4>
+                    <!-- MAILING LIST FORM -->
+                    <form method="POST">
+                        <div id="mailing-form-div" class="form-group">
+                            <br>
+                            <label for="name">Name</label>
+                            <input 
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                name="name"
+                                required />
+                            <br>
+                            <label for="email">Email Address</label>
+                            <input 
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                name="email"
+                                required />
+
+                        </div>
+                        <button type="submit"
+                                class="btn btn-primary" 
+                                style="background-color: #2a634b; color: black; 
+                                        position:relative; left: 38.5%; width: 8rem;
+                                        font-family: 'Quicksand', sans-serif;
+                                        font-weight: bold;">
+                            JOIN NOW
+                        </button>
+                        <br><br>
+                    </form>
+                </div>
+            </div>
+        </span>
+    </div>
+</div>
+    
+<script>
+    var modal = document.getElementById("myModal");
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    window.onclick = function(event) {
+        // Note: If you click on a field in the form
+        // and you prematurely press enter, the form
+        // will not show :(
+        if (event.target == span) {
+            modal.style.display = "none";
+        }
+        else if (event.target == btn) {
+            modal.style.display = "block";
+        }
+        else if (event.target == modal) {
+            modal.style.display = "block";
+        }
+    }
+</script>
+
+{% endblock %}

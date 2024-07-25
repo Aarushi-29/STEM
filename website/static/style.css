@@ -1,0 +1,679 @@
+/* STYLING FOR ALL PAGES */
+/* --------------------------------------------------------------- */
+body{
+    background-color:rgb(177, 176, 170) ;
+    background-image: url("https://c.wallhere.com/photos/79/83/1280x744_px_Abstract_Field_Abstract_Mountain_Nature_Wallpaper_Image_cool_hs_photos_field_photos_hd_images_for_desktop_hd_wallpapers_landscapes-801742.jpg!d");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.title{
+    text-align: center;
+    color: #a5fff2;
+    font-size: 800%;
+    opacity:1;
+    letter-spacing: 4px;
+    text-shadow: 4px 4px black;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Life Savers', cursive;
+}
+
+a {
+    color: black;
+}
+
+.home-buttons {
+    position: relative;
+    left: 20%;
+}
+
+
+/* STYLING FOR LOGIN PAGE */
+/* --------------------------------------------------------------- */
+#login-div {
+    width: 23%;
+    align-items: center;
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    border-radius: 0.5rem;
+    position: relative;
+    left: 38.5%;
+    margin-top: 80px;
+}
+
+.form-control {
+    width: 100%;
+    padding: auto;
+    background-color: #7496df;
+}
+
+
+/* STYLING FOR SIGNUP PAGE */
+/* --------------------------------------------------------------- */
+#signup-div {
+    width: 23%;
+    align-items: center;
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    border-radius: 0.5rem;
+    position: relative;
+    left: 38.5%;
+}
+
+
+/* STYLING FOR PROFILE PAGE */
+/* --------------------------------------------------------------- */
+#profile-body {
+    background-image: url("https://cutewallpaper.org/cdn-cgi/mirage/2af0adefb1b7ebf6af3b94bf8b86378693ec8b55d34af727ac0cbb58dfd044f5/1280/28/desktop-wallpaper-cool-simple/150-simple-desktop-wallpapers-for-minimalist-lovers-icanbecreative.png");
+}
+
+#profile-container {
+    width: 100%;
+    align-items: center;
+    background-color: transparent;
+    display: inline-block;
+    position: absolute;
+    left: 3.5%;
+}
+
+#profile-info {
+    width: 31%;
+    position: absolute;
+    display: inline-block;
+    top: 2rem;
+    left: 5%;
+}
+
+#wildcard-q {
+    width: 31%;
+    position: absolute;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    left: 40%;
+    top: 2rem;
+}
+
+#wildcard-slideshow {
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    right: 0%;
+    top: 2rem;
+}
+
+#edu-submit {
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+}
+
+#edulevel-label {
+    font-style: italic;
+}
+
+
+
+/* STYLING CONTACT PAGE */
+/* --------------------------------------------------------------- */
+#contact-div {
+    width: 32.5%;
+    align-items: center;
+    background-color: #7496df;
+    display: grid;
+    justify-content: center;
+    border-radius: 0.5rem;
+    position: relative;
+    left: 45%; 
+    top: -15rem;
+}
+
+#contact-title {
+    position: relative;
+    left: -30%;
+    top: 5.5rem;
+}
+
+#contact-subtitle {
+    position: relative;
+    left: 13%;
+    top: 5.5rem;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+
+
+/* STYLING FOR HOME PAGE */
+/* --------------------------------------------------------------- */
+.page_links_left{
+    background-color:#d5ff80;
+    width: 13rem;
+    color: black;
+    text-align: center;
+    border-radius: 1rem;
+    letter-spacing: 2px;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    text-decoration: none;
+    position: relative;
+    left: 25%;
+}
+
+.page_links_right{
+    background-color:#d5ff80;
+    width: 13rem;
+    margin: 2%;
+    color: black;
+    text-align: center;
+    border-radius: 1rem;
+    letter-spacing: 2px;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-family: 'Quicksand', sans-serif;
+    display: grid;
+    position: relative;
+    right: -50%;
+}
+
+#about {
+    margin: 0%;
+}
+
+#join{
+    margin: 0%;
+}
+
+#chooseyourpath {
+    margin: 0%;
+}
+
+#contactus{
+    margin: 0%;
+}
+
+#resources {
+    margin: 0%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 37%;
+  top: 30%;
+  width: 25%;
+  overflow: auto; 
+  justify-content: center;
+  border-radius: 0.75rem;
+}
+
+
+#mailing-form-div {
+    width: 200%;
+    align-items: center;
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    border-radius: 0.5rem;
+    position: relative;
+    left: -30%;
+    font-size: 1vw;
+}
+
+#mailing-h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 26.5%;
+}
+
+#mailing-p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1vw;
+}
+
+/* The Close Button */
+.close {
+  color: #080808;
+  font-weight: bold;
+  padding: 1vw;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* STYLING FOR ABOUT PAGE */
+/* --------------------------------------------------------------- */
+
+*{
+    box-sizing: border-box;
+}
+img{
+    vertical-align: middle;
+}
+
+#history-wrapper {
+    position: absolute;
+    left: 8%;
+    top: 20%;
+    display: inline;
+    width: 85%;
+}
+
+.container{
+    position: relative;
+}
+
+#history-slideshow-div {
+    position: relative;
+    left: 30%;
+    top: 10rem;
+}
+
+#actual-history-slideshow {
+    width: 100%;
+}
+
+#women-stem-div {
+    position: relative;
+    top: 120%;
+}
+
+#history-div {
+    width: 50%;
+    padding: 2rem;
+}
+
+#more {
+    display: none;
+}
+
+.slideshow{
+    display: none;
+    
+
+}
+
+.slidepics{
+    width:30%;
+    height:20%;
+
+}
+.cursor{
+    cursor: pointer;
+}
+.democursor{
+    height:100px;
+}
+
+.numbertext{
+    color:#f2f2f2;
+    text-shadow:1px 1px #222;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.caption-container{
+    text-align: center;
+    background-color: #222;
+    padding: 8px 16px;
+    color: white;
+}
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+
+}
+.column{
+    float:left;
+    width: 16.66%;
+    height:max-content;
+
+
+}
+.demo{
+    opacity:0.6;
+
+}
+
+.active,.demo:hover{
+    opacity:1;
+}
+
+#title{
+    text-align: center;
+    color: #d5ff80;
+    font-size: 600%;
+    opacity:1;
+    letter-spacing: 4px;
+    text-shadow: 4px 4px black;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Life Savers', cursive;  
+}
+#caption{
+    text-align: left;
+    color:whitesmoke;
+    text-shadow: 2px 2px black;
+    padding: 10px;
+    background: black;
+    background-size: 20%;
+    background-position: 0px;
+}
+
+
+#subtitle{
+    text-align: center;
+    color: #d5ff80;
+    font-size: 200%;
+    opacity:1;
+
+    text-shadow: 4px 4px black;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Life Savers', cursive;  
+}
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+.column {
+    width: 100%;
+    display: block;
+}
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.container-2 {
+    padding: 0 16px;
+    width: 110%;
+}
+
+.container-2::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.about-me-p {
+    padding: 0.4rem;
+}
+
+.school {
+    color:black;
+}
+.profilepic{
+    border-radius: 50%;
+}
+#notsubtitle{
+    text-align: left;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Life Savers', cursive; 
+    color: whitesmoke;
+    text-shadow: 2px 2px black;
+}
+h3{
+    color: antiquewhite;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 2px black;
+
+}
+.school{
+    color: black;
+    font-size: 0.7rem;
+}
+#HistoryLesson{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    color: #f2f2f2;
+}
+.box{
+    background-color: #f2f2f2;
+    opacity: 0.7;
+    float:right;
+}
+.wrapper, #histrypr{
+    float:right;
+}
+.captionbox{
+    float:right;
+    text-align:right;
+}
+
+
+
+
+/* STYLING FOR CHOOSE YOUR PATH PAGE */
+/* --------------------------------------------------------------- */
+
+.button1{
+    width: 13rem;
+    color: black;
+    text-align: center;
+    border-radius: 1rem;
+    letter-spacing: 2px;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    text-decoration: none;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+    .button1>h2{
+        color:black;
+        text-align:center;
+    }
+
+    .button2{
+    width: 13rem;
+    color: black;
+    text-align: center;
+    border-radius: 1rem;
+    letter-spacing: 2px;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    text-decoration: none;
+    position: absolute;
+    top: 30%;
+    right: 15%;
+}
+    .button2>h2{
+        color:black;
+        text-align:center;
+    }
+    .button3{
+    width: 13rem;
+    color: black;
+    text-align: center;
+    border-radius: 1rem;
+    letter-spacing: 2px;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    text-decoration: none;
+    position: absolute;
+    bottom: -10%;
+    left: 15%;
+}
+    .button3>h2{
+        color:black;
+        text-align:center;
+    }
+
+    .button4{
+    width: 13rem;
+    color: black;
+    text-align: center;
+    border-radius: 1rem;
+    letter-spacing: 2px;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    text-decoration: none;
+    position: absolute;
+    bottom: -10%;
+    right: 15%;
+}
+    .button4>h2{
+        color: black;
+        text-align:center;
+    }
+.dropbtn {
+    background-color:#d5ff80;
+    width: 13rem;
+    position: absolute;
+    left: -20%;
+    top: 5%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px black;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+ 
+
+/* STYLING FOR RESOURCES PAGE */
+/* --------------------------------------------------------------- */
+
+#resources-container {
+    display: inline;
+    width: 80%;
+}
+
+#list-of-resources ul {
+    margin: 5.5rem;
+    margin-top: -50rem;
+    padding: 0;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    left: 15%;
+}
+
+#list-of-resources ul li {
+    display:inline-block;
+    vertical-align:top;
+    width:25%;
+    background-color: transparent;
+    margin: 1rem;
+}
+
+/* .indiv-res-div {
+    background-color: pink;
+} */
+
+#resource-edu-submit{
+    font-size: 1rem;
+    background-color: rgb(146, 124, 124);
+    color: white; 
+}
+#resource-opp-submit {
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+}
+
+#educational-resource-category {
+    font-style: italic;
+}
+
+#opportuntity-resource-category{
+    font-style: italic;
+}
+
+.form-control {
+    width: 100%;
+    padding: auto;
+    background-color: #7496df;
+}
+
+#resource-form-div{
+    width: 15%;
+    padding: 1.25rem;
+    align-items: center;
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    border-radius: 0.5rem;
+    position: relative;
+    left: 5%;
+}
+
+.label{
+    font-family:'Dancing Script', cursive ;
+    color: #080808;
+    float: right;
+}
+
+h2{
+    font-size: 35px;
+    color:black;
+}
+
+/*
+input[type=radio] {
+    border: 0px;
+    width: 50%;
+    height: 2em;
+    float:left;
+}
+*/
+input[type="radio"] {
+    -ms-transform: scale(0.5); /* IE 9 */
+    -webkit-transform: scale(0.5); /* Chrome, Safari, Opera */
+    transform: scale(0.5);
+    float: left;
+    clear: both;
+}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %} Contact Us{% endblock %} 
+
+{% block content %}
+<br>
+<h1 id="contact-title" class="title">Get in<br>Touch!</h1>
+<h3 id="contact-subtitle"><i>Don't be shy</i></h3>
+<form method="POST">
+    <div id="contact-div" class="form-group">
+        <br>
+        <label for="name">Name</label>
+        <input 
+            type="text"
+            class="form-control"
+            style="background-color: white;"
+            id="name"
+            name="name"
+            required />
+        
+        <label for="email">Email Address</label>
+        <input 
+            type="email"
+            class="form-control"
+            style="background-color: white;"
+            id="email"
+            name="email"
+            required />
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="40" rows="7" class="form-control" style="background-color: white;"></textarea>
+        <br>
+    </div>
+    <br>
+    
+    <button type="submit"
+            class="btn btn-primary" 
+            style="background-color: #eaff82; 
+                    color: black; 
+                    position:relative;
+                    left: 55%;
+                    width: 11rem;
+                    top: -17rem;
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;">
+        SEND
+    </button>
+</form>
+{% endblock %} 
